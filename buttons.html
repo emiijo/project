@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Buttons</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <nav>
+                <a href="about.html">HTML</a>
+                <a href="css.html">CSS</a>
+                <a href="javascript.html">JavaScript</a>
+                <a href="index.html">Main page</a>
+            </nav>
+            <div id="logo">Buttons</div>
+        </header>
+
+        <div id="big-image"></div>
+
+        <main>
+            <div id="big-image"><img width="100%" height="300" src="codeingpics.jpg" alt="My header picture"></div>
+            <section>
+                <article>
+                    <h3>Please note:</h3>
+                    <p>This is only one of many things you can use CSS for, but just giving you an example other than
+                        just changing the text font, or color, or backgroun color. Which is illustrated in the page
+                        itself to how I've styled it so far, with shade, padding, soft edges etc.</p>
+                    <p>One can visit <a href="https://www.w3schools.com/css/">W3 School</a> for more information
+                        regarding options to CSS.</p>
+                </article>
+
+                <br>
+                <hr><br>
+
+                <article>
+                    <h3>General buttons</h3>
+                    <p>This is the normal, default button available in the HTML, without CSS:
+
+                        <br><br>
+
+                        <button type="button">Default button</button>
+                    </p>
+                </article>
+
+                <br>
+
+                <article>
+                    <p>This a styled button via CSS:
+
+                        <br><br>
+
+                        <button style="background-color: darkcyan;" type="button">Styled</button>
+                    </p>
+                </article>
+
+                <br>
+
+                <hr>
+
+                <br>
+
+                <h3>The prompt() method</h3>
+
+                <p>Click the button to demonstrate the prompt box.</p>
+
+                <button onclick="myFunction()">Click me</button>
+
+                <p id="demo"></p>
+
+                <script>
+                    function myFunction() {
+                        let person = prompt("Please enter your name");
+                        if (person != null) {
+                            document.getElementById("demo").innerHTML =
+                                "Hello " + person + "! How are you today?";
+                            //Which is the main function of the code if all the conditions are met.
+                        }
+                    }
+                </script>
+
+                <p>Which prompts the user to fill in the box, and then code will use the answer to complete the process
+                    for the function of the button.</p>
+
+                <br>
+                <hr>
+                <br>
+
+                <article>
+                    <h3>Almost there..</h3>
+                    <p>When we will move on to the <a href="javascript.html">JavaScript</a> part, we will try to make
+                        the button function more clear, amongst other things! Just showing you examples of what you can
+                        style via CSS
+                        after you add all necessary elements to your HTML page and wants to make it come to live, or
+                        style
+                        it.</p>
+                </article>
+
+                <br>
+
+                <article></article>
+            </section>
+        </main>
+
+
+        <footer>
+            &copy; Emie-Ann Johannessen
+        </footer>
+    </div>
+</body>
